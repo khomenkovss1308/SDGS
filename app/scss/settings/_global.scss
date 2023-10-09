@@ -1,0 +1,20 @@
+body {
+    font-family: 'Roboto';
+    font-style: normal;
+}
+
+.wrapper {
+    width: 75%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.promo {
+    margin: 50px auto;
+}
+
+@media (max-width: 1300px) {
+    .wrapper {
+        width: 90%;
+    }
+}

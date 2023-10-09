@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.8/plyr.css" />  
+    <link rel="shortcut icon" href="images/icons/default/logoAccount.svg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <title>Цели устойчивого развития в Беларуси</title>
+</head>
+<body>
+    @@include('../blocks/common/header/header.html')
+    <!-- /header.html -->
+
+    <div class="header__burger-overlay"></div>
+
+    <main class="main">
+        @@include('../blocks/pages/home/target-block/target-block.html')
+        <!-- /target-block.html -->
+
+        @@include('../blocks/pages/home/target-block/target-block-mobile.html')
+        <!-- /target-block-mobile.html -->
+
+        @@include('../blocks/common/all-news-list/all-news-list.html')
+        <!-- /all-news-list.html -->
+
+        @@include('../blocks/common/banners-list/banners-list.html')
+        <!-- /banners-list.html -->
+
+        @@include('../blocks/pages/home/slider/slider.html')
+        <!-- /slider.html -->
+        
+        @@include('../blocks/pages/home/map-navigation/map-navigation.html')
+        <!-- /map-navigation.html -->
+    </main>
+
+    @@include('../blocks/common/footer/footer.html')
+    <!-- /footer.html -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/accodion.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

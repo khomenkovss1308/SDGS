@@ -1,0 +1,31 @@
+.lang-list {
+    gap: 40px 20px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    &__link {
+        color: #193557;
+        font-size: 15px;
+        font-weight: 600;
+        padding: 10px 24px;
+        border-radius: 4px;
+        transition: all .3s;
+        white-space: nowrap;
+        letter-spacing: 0.89px;
+        text-transform: uppercase;
+        background-color: #EDEDED;
+
+        &:hover {
+            color: $white;
+            background-color: #2C5B95;
+        }
+  }
+
+  & .active {
+    & .lang-list__link {
+      color: $white;
+      background-color: #2C5B95;
+    }
+  }
+}

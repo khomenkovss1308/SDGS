@@ -1,0 +1,21 @@
+//settings
+@import "settings/color";
+@import "settings/reset";
+@import "settings/fonts";
+@import "settings/global";
+
+//common
+@import "settings/common/accodion";
+
+//blocks common
+@import "../blocks/common/header/header";
+@import "../blocks/common/footer/footer";
+@import "../blocks/common/social-list/social-list";
+@import "../blocks/common/banners-list/banners-list";
+@import "../blocks/common/header/lang-list/lang-list";
+@import "../blocks/common/all-news-list/all-news-list";
+
+//blocks pages home
+@import "../blocks/pages/home/slider/slider";
+@import "../blocks/pages/home/target-block/target-block";
+@import "../blocks/pages/home/map-navigation/map-navigation";
