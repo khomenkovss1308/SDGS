@@ -1,20 +1,18 @@
 $(document).ready(function() {
   $('.accordion__header').click(function() {
-      const $accordionItem = $(this).closest('.accordion__item');
-      const $accordionBody = $accordionItem.find('.accordion__body');
+      const $header = $(this);
+      const $accordionItem = $header.closest('.accordion__item');
       const isOpen = $accordionItem.hasClass('accordion__item_show');
 
       if (!isOpen) {
-          $accordionBody.css('max-height', $accordionBody[0].scrollHeight + 'px');
+          // Expand the clicked accordion item
+          $accordionItem.addClass('accordion__item_show');
       } else {
-          $accordionBody.css('max-height', '0');
+          // Collapse the clicked accordion item
+          $accordionItem.removeClass('accordion__item_show');
       }
 
-      $accordionItem.toggleClass('accordion__item_show');
-
-      if (!isOpen) {
-          $accordionItem.siblings('.accordion__item_show').removeClass('accordion__item_show');
-          $accordionItem.siblings('.accordion__item_show').find('.accordion__body').css('max-height', '0');
-      }
+      // Close other open accordion items
+      $accordionItem.siblings('.accordion__item_show').removeClass('accordion__item_show');
   });
 });

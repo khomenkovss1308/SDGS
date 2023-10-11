@@ -5,17 +5,21 @@
 @import "settings/global";
 
 //common
+@import "settings/common/sub-nav";
 @import "settings/common/accodion";
 
 //blocks common
 @import "../blocks/common/header/header";
 @import "../blocks/common/footer/footer";
+@import "../blocks/common/logo-slider/logo-slider";
 @import "../blocks/common/social-list/social-list";
 @import "../blocks/common/banners-list/banners-list";
 @import "../blocks/common/header/lang-list/lang-list";
 @import "../blocks/common/all-news-list/all-news-list";
+@import "../blocks/common/map-navigation/map-navigation";
+
+//pages
+@import "pages/question";
 
 //blocks pages home
-@import "../blocks/pages/home/slider/slider";
 @import "../blocks/pages/home/target-block/target-block";
-@import "../blocks/pages/home/map-navigation/map-navigation";

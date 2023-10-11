@@ -1,4 +1,4 @@
-let swiper = new Swiper(".swiper-home", {
+let swiper = new Swiper(".swiper-logo", {
     slidesPerView: 1,
     spaceBetween: 10,
     pagination: {

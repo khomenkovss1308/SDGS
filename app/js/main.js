@@ -63,3 +63,22 @@ $(document).ready(function () {
         $(this).find(".header__nav__top-list__content__sub-list").hide(100);
     });
 });
+
+$(document).ready(function() {
+    $('.question__list__header').click(function() {
+        const $header = $(this);
+        const $body = $header.next('.question__list__body');
+
+        if ($body.css('max-width') === '0px') {
+            $body.css('max-width', '100%');
+            $body.css('max-height', '100%');
+            $header.css('background', 'url(../images/icons/questions_close.svg) no-repeat left 27px');
+        } else {
+            $body.css('max-width', '0');
+            $body.css('max-height', '0');
+            $header.css('background', 'url(../images/icons/questions_open.svg) no-repeat left 27px');
+        }
+    });
+});
+
+
