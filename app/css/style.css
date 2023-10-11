@@ -1032,6 +1032,7 @@ body {
   color: #000000;
   padding: 20px;
   background-color: rgba(11, 159, 49, 0.1);
+  transition: all 0.5s;
 }
 .events__card__title {
   min-height: 80px;
@@ -1041,7 +1042,6 @@ body {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  transition: all 0.5s;
 }
 .events__card__img {
   width: 100%;
