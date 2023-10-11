@@ -249,9 +249,15 @@ body {
   margin: 0;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1600px) {
   .wrapper {
     width: 90%;
+  }
+  .wrapper__left-block {
+    width: 30%;
+  }
+  .wrapper__right-block {
+    width: 66%;
   }
 }
 @media (max-width: 1024px) {

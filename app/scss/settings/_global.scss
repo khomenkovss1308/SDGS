@@ -64,9 +64,17 @@ body {
     }
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1600px) {
     .wrapper {
         width: 90%;
+
+        &__left-block {
+            width: 30%;
+        }
+    
+        &__right-block {
+            width: 66%;
+        }
     }
 }
 
