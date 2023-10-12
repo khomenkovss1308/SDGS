@@ -28,7 +28,7 @@
             display: block;
             width: 178px;
             height: 55px;
-            object-fit: cover;
+            object-fit: contain;
             filter: grayscale(100%);
         }
     }
