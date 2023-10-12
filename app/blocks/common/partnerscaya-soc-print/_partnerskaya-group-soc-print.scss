@@ -1,0 +1,24 @@
+.partnerskaya-group-soc-print {
+   border-top: 3px solid #2F402D;
+   padding-top: 10px;
+   display: flex;
+   gap: 10px;
+}
+.soc-print-twit {
+   width: 32px;
+   & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+   }
+}
+.soc-print {
+   display: flex;
+   gap: 5px;
+   align-items: center;
+   color: $black;
+   font-size: 14px;
+   padding: 0 10px;
+   background: #EBEDEF;
+   border-radius: 4px;
+}

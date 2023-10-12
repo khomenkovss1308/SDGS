@@ -1,0 +1,111 @@
+.logo-title-block {
+   display: flex;
+   align-items: center;
+   height: 100%;
+   // .logo-title-block__title
+
+   &__title {
+      font-size: clamp(30px, 7.3vw, 60px);
+      color: #fff;
+      padding-left: 330px;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+      @media(max-width: 1024px) {
+         padding-left: 0;
+      }
+   }
+}
+//========================================================================================================================================================
+.logo-block {
+}
+.logo-block-cards {
+   //display: grid;
+   //grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+   display: flex;
+   flex-wrap: wrap;
+   gap: 5px;
+   @media(max-width: 1508px) {
+      display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+   }
+   @media(max-width: 768px) {
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   }
+
+		// .logo-block-cards__ruls
+
+		&__ruls {
+         padding-top: 20px;
+         padding-bottom: 60px;
+         
+         & a {
+            color: #2C5B95;
+            font-size: 18px;
+            font-weight: 400;
+            text-decoration: underline;
+            line-height: 140%;
+         }
+		}
+}
+.logo-card {
+ max-width: clamp(250px, 17.708vw, 340px);
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+justify-content: space-between;
+   border: 1px solid #cdcdcd;
+   @media(max-width: 1508px) {
+      max-width: 100%;
+ width: 100%;
+   }
+ 
+
+ 
+
+		// .logo-card__image
+
+		&__image {
+         padding: 40px 0;
+        margin: 0 auto;
+
+         width: 100px;
+         
+         & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+         }
+		}
+
+		// .logo-card__links
+
+		&__links {
+         display: flex;
+         flex-direction: column;
+		}
+
+		// .logo-card__link
+
+		&__link {
+         height: 40px;
+         padding: 10px;
+         border-top: 1px solid #cdcdcd;
+         
+            color: #2C5B95;
+            font-size: clamp(15px, .9vw, 18px);
+            font-weight: 500;
+            
+            line-height: 140%;
+            text-align: center;
+            transition: all ease .3s;
+            
+            @media (any-hover: hover){
+               &:hover{
+                  text-decoration: underline;
+               }
+            }
+         
+		}
+}
+._long {
+   width: 250px;
+}
