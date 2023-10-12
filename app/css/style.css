@@ -1544,7 +1544,7 @@ body {
   }
 }
 .main-bg {
-  background-image: url(../../../images/bg/ornament_bg.png), linear-gradient(-180deg, #F52853 0%, #DC254B 98%);
+  background-image: url(../images/bg/ornament_bg.png), linear-gradient(-180deg, #F52853 0%, #DC254B 98%);
   background-repeat: no-repeat;
   background-position: 100% 25%;
   background-attachment: fixed;
@@ -2008,7 +2008,7 @@ textarea {
 }
 
 .search-input {
-  background: url("../../images/logo/branding.png") left no-repeat;
+  background: url(../images/logo/branding.png) left no-repeat;
   background-position: 2% 50%;
 }
 

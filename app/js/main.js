@@ -72,11 +72,11 @@ $(document).ready(function() {
         if ($body.css('max-width') === '0px') {
             $body.css('max-width', '100%');
             $body.css('max-height', '100%');
-            $header.css('background', 'url(../images/icons/questions_close.svg) no-repeat left 27px');
+            $header.css('background', 'url(images/icons/questions_close.svg) no-repeat left 27px');
         } else {
             $body.css('max-width', '0');
             $body.css('max-height', '0');
-            $header.css('background', 'url(../images/icons/questions_open.svg) no-repeat left 27px');
+            $header.css('background', 'url(images/icons/questions_open.svg) no-repeat left 27px');
         }
     });
 });
