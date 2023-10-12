@@ -1,11 +1,10 @@
-.partnerskaya-group {
+.main-bg {
    background-image: url(../../../images/bg/ornament_bg.png), linear-gradient(-180deg, #F52853 0%, #DC254B 98%);
     background-repeat: no-repeat;
     background-position: 100% 25%;
     background-attachment: fixed;
     height: 570px;
-    left: 0;
-    right: 0;
+    display: flex;
     padding-top: 15px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -15,12 +14,10 @@
       background-position: 4% 30%;
     }
 }
-.wrapper {
-}
-.partnerskaya-group-title-block {
+
+.main-bg-title-block {
    display: flex;
    align-items: center;
-   justify-content: center;
    height: 100%;
 
 		// .partnerskaya-group-title-block__title
@@ -28,39 +25,39 @@
 		&__title {
          font-size: clamp(30px, 7.3vw, 60px);
          color: #fff;
-         padding-left: 330px;
+         padding-left: 285px;
          text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
          @media(max-width: 1024px) {
             padding-left: 0;
          }
 		}
 }
-table.partnerskaya-group-table{
+table.architecture-table{
 	width: 100%;
 	border-collapse:collapse;
 	border-spacing:0;
 	height: auto;
    font-size: clamp(14px, 1.666vw, 16px);
 }
-table.partnerskaya-group-table,table.partnerskaya-group-table td, table.partnerskaya-group-table th {
+table.architecture-table,table.architecture-table td, table.architecture-table th {
 	border: 1px solid #595959;
 }
-table.partnerskaya-group-table td,table.partnerskaya-group-table th {
+table.architecture-table td,table.architecture-table th {
 	padding: 10px;
 	width: 30px;
 	height: 35px;
 }
-table.partnerskaya-group-table td span {
+table.architecture-table td span {
    font-weight: 500;
 }
-table.partnerskaya-group-table td {
+table.architecture-table td {
    @media(max-width: 475px) {
       vertical-align: baseline;
    }
 }
 
 //========================================================================================================================================================
-.partnerskaya-group-content {
+.architecture-content {
    padding-top: 50px;
    display: flex;
    padding-bottom: 60px;
@@ -73,7 +70,7 @@ table.partnerskaya-group-table td {
       display: none;
    }
 }
-.partnerskaya-group-content-right {
+.architecture-content-right {
    max-width: 1050px;
    @media(max-width: 575px) {
       width: 100%;
@@ -99,11 +96,8 @@ table.partnerskaya-group-table td {
    padding-bottom: 10px;
    font-weight: 600;
 }
-.partnerskaya-group-table-block {
-}
-.partnerskaya-group-table {
-}
-.partnerskaya-group-link {
+
+.architecture-link {
    padding-top: 40px;
    & a {
       font-size: clamp(18px, 2.291vw, 22px);

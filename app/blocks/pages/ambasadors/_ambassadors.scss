@@ -1,39 +1,4 @@
-.partnerskaya-group {
-   background-image: url(../../../images/bg/ornament_bg.png), linear-gradient(-180deg, #F52853 0%, #DC254B 98%);
-    background-repeat: no-repeat;
-    background-position: 100% 25%;
-    background-attachment: fixed;
-    height: 570px;
-    left: 0;
-    right: 0;
-    padding-top: 15px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    @media(max-width: 768px) {
-      height: 380px;
-      background-position: 4% 30%;
-    }
-}
 
-.partnerskaya-group-title-block {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   height: 100%;
-
-		// .partnerskaya-group-title-block__title
-
-		&__title {
-         font-size: clamp(30px, 7.3vw, 60px);
-         color: #fff;
-         padding-left: 330px;
-         text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-         @media(max-width: 1024px) {
-            padding-left: 0;
-         }
-		}
-}
 //========================================================================================================================================================
 .ambasadors {
 

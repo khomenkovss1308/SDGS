@@ -21,18 +21,20 @@
     <!-- /header.html -->
 
     <div class="header__burger-overlay"></div>
-    <div class="partnerskaya-group">
+    <div class="main-bg">
       <div class="wrapper">
-         <div class="partnerskaya-group-title-block">
-            <h1 class="partnerskaya-group-title-block__title">Молодёжные послы Целей устойчивого развития</h1>
+         <div class="main-bg-title-block">
+            <h1 class="main-bg-title-block__title">Молодёжные послы Целей устойчивого развития</h1>
          </div>
       </div>
    </div>
     <main class="main">
       <div class="wrapper">
-         <div class="partnerskaya-group-content">
-            <div class="nav-bar"></div>
-            <div class="partnerskaya-group-content-right _ambasadors-right">
+         <div class="architecture-content">
+            
+            <div class="wrapper__left-block"></div>
+
+            <div class="wrapper__right-block _ambasadors-right">
                <h2 class="ambasadors__title">Молодёжные послы Целей Устойчивого Развития</h2>
                <p>
                   Молодёжные послы – это победители конкурса «Молодёжные послы Целей устойчивого развития – будущее планеты в наших руках», организованного координационным советом по образованию в интересах устойчивого развития Министерства образования, Национальным центром художественного творчества детей и молодёжи, Республиканским центром экологии и краеведения, Республиканским молодёжным центром. Молодёжный посол ЦУР – это представитель из студенческой среды, выбираемый для продвижения Целей устойчивого развития и руководствующийся слоганом «В устойчивое будущее вместе». Молодёжные послы популяризуют Цели устойчивого развития (ЦУР) среди молодёжи, информируют её о механизмах достижения показателей устойчивого развития на локальном и национальном уровнях, помогают приобретать молодым людям знания и профессиональные компетенции XXI века, осваивать идеи и принципы устойчивого развития.
@@ -455,7 +457,7 @@
                <div class="partnerskaya-group-link">
 
                </div>
-               @@include('../blocks/common/partnerscaya-soc-print/partnerskaya-group-soc-print.html')
+               @@include('../blocks/common/soc-print/soc-print.html')
               </div>
             </div>
          </div>
@@ -464,8 +466,11 @@
 
 
         
-        @@include('../blocks/pages/home/map-navigation/map-navigation.html')
-        <!-- /map-navigation.html -->
+      @@include('../blocks/common/logo-slider/logo-slider.html')
+      <!-- /logo-slider.html -->
+      
+      @@include('../blocks/common/map-navigation/map-navigation.html')
+      <!-- /map-navigation.html -->
     </main>
 
     @@include('../blocks/common/footer/footer.html')

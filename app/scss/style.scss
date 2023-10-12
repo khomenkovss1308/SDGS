@@ -20,6 +20,7 @@
 @import "../blocks/common/header/lang-list/lang-list";
 @import "../blocks/common/all-news-list/all-news-list";
 @import "../blocks/common/map-navigation/map-navigation";
+@import "../blocks/common/soc-print/soc-print";
 
 //pages
 @import "pages/news";
@@ -28,3 +29,8 @@
 
 //blocks pages home
 @import "../blocks/pages/home/target-block/target-block";
+@import "../blocks/pages/architecture/architecture";
+@import "../blocks/pages/ambasadors/ambassadors";
+@import "../blocks/pages/logo/logo";
+@import "../blocks/pages/contact/contact";
+@import "../blocks/pages/search/search-block";
