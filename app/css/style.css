@@ -203,6 +203,7 @@ body {
 .wrapper__container {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 50px;
 }
 .wrapper__left-block {
   width: 20%;
