@@ -334,18 +334,6 @@ body {
   margin-bottom: 10px;
 }
 .sub-nav .accordion__header {
-  color: #232323;
-  display: flex;
-  font-size: 17px;
-  font-weight: bold;
-  line-height: 24px;
-  text-transform: uppercase;
-  white-space: wrap;
-  align-items: center;
-  justify-content: space-between;
-  transition: background-color 0.2s ease-out;
-  margin-bottom: 5px;
-  border-radius: 4px;
   border-bottom: 1px solid #2C5B95;
 }
 .sub-nav .accordion__header:hover {
@@ -420,32 +408,38 @@ body {
   margin-bottom: 10px;
 }
 .accordion__header {
-  color: #000000;
-  gap: 20px;
-  display: flex;
   padding: 10px;
   cursor: pointer;
-  align-items: center;
-  transition: all 0.3s;
-  margin-bottom: 10px;
-  border-radius: 4px;
-}
-.accordion__header span {
-  font-size: 16px;
-  font-weight: 600;
-  text-decoration: none;
+  color: #232323;
+  display: flex;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 24px;
   text-transform: uppercase;
-}
-.accordion__header path {
-  fill: #000000;
-  transition: all 0.3s;
+  white-space: wrap;
+  align-items: center;
+  justify-content: space-between;
+  transition: background-color 0.2s ease-out;
+  margin-bottom: 5px;
+  border-radius: 4px;
 }
 .accordion__header:hover {
   color: #ffffff;
   background-color: #2C5B95;
 }
-.accordion__header:hover path {
-  fill: #ffffff;
+.accordion__header:hover::after {
+  background-image: url(../images/icons/accordion/arrowWhite.svg);
+}
+.accordion__header::after {
+  flex-shrink: 0;
+  width: 20px;
+  height: 10px;
+  margin-left: auto;
+  background-image: url(../images/icons/accordion/arrowBlack.svg);
+  background-repeat: no-repeat;
+  background-size: 1.25rem;
+  content: "";
+  transition: transform 0.2s ease-out;
 }
 .accordion__body {
   overflow: hidden;
@@ -958,7 +952,7 @@ body {
   left: 0;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1600px) {
   .logo-slider {
     width: 95%;
   }
@@ -1440,7 +1434,7 @@ body {
 }
 .target-block__link:nth-child(17) {
   top: 68.2%;
-  left: 55.7%;
+  left: 72.7%;
 }
 .target-block__link:nth-child(17) .target-block__content {
   background-image: linear-gradient(-180deg, #216EAE 2%, #174C78 94%);

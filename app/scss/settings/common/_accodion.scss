@@ -5,35 +5,40 @@
     }
 
     &__header {
-        color: $black;
-        gap: 20px;
-        display: flex;
         padding: 10px;
         cursor: pointer;
+        color: #232323;
+        display: flex;
+        font-size: 17px;
+        font-weight: bold;
+        line-height: 24px;
+        text-transform: uppercase;
+        white-space: wrap;
         align-items: center;
-        transition: all .3s;
-        margin-bottom: 10px;
+        justify-content: space-between;
+        transition: background-color 0.2s ease-out;
+        margin-bottom: 5px;
         border-radius: 4px;
 
-        & span {
-            font-size: 16px;
-            font-weight: 600;
-            text-decoration: none;
-            text-transform: uppercase;
-        }
-
-        & path {
-            fill: $black;
-            transition: all .3s;
-        }
-        
         &:hover {
             color: $white;
             background-color: #2C5B95;
 
-            & path {
-                fill: $white;
+            &::after {
+                background-image: url(../images/icons/accordion/arrowWhite.svg);
             }
+        }
+
+        &::after {
+            flex-shrink: 0;
+            width: 20px;
+            height: 10px;
+            margin-left: auto;
+            background-image: url(../images/icons/accordion/arrowBlack.svg);
+            background-repeat: no-repeat;
+            background-size: 1.25rem;
+            content: "";
+            transition: transform 0.2s ease-out;
         }
     }
 

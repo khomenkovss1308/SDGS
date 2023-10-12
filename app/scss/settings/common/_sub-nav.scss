@@ -32,18 +32,6 @@
         }
 
         &__header {
-            color: #232323;
-            display: flex;
-            font-size: 17px;
-            font-weight: bold;
-            line-height: 24px;
-            text-transform: uppercase;
-            white-space: wrap;
-            align-items: center;
-            justify-content: space-between;
-            transition: background-color 0.2s ease-out;
-            margin-bottom: 5px;
-            border-radius: 4px;
             border-bottom: 1px solid #2C5B95;
 
             &:hover {
