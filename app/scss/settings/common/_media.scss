@@ -8,6 +8,7 @@
     &__card {
         gap: 15px;
         display: flex;
+        align-items: center;
 
         &__img-wrapper {
             min-width: 120px;
@@ -33,6 +34,13 @@
         &__title {
             color: $black;
             font-size: 18px;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+
+        &__date {
+            color: #A7ACB1;
+            font-size: 14px;
             font-weight: 500;
         }
     }
