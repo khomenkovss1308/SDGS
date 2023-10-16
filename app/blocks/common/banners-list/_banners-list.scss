@@ -5,6 +5,45 @@
     margin-bottom: 75px;
     grid-template-columns: repeat(3, 1fr);
 
+    &__link {
+        position: relative;
+    }
+
+    &__content {
+        top: 15px;
+        left: 25px;
+        color: $white;
+        width: 320px;
+        position: absolute;
+        
+
+        & .container {
+            gap: 10px;
+            display: flex;
+        }
+
+        & .place {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            & .number {
+                font-size: 50px;
+                font-weight: bold;
+                line-height: 100%;
+            }
+
+            & .text {
+                font-size: 20px;
+            }
+        }
+
+        & .description {
+            font-size: 20px;
+        }
+    }
+
     &__img {
         width: 100%;
     }

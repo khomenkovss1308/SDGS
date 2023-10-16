@@ -1114,6 +1114,37 @@ body {
   margin-bottom: 75px;
   grid-template-columns: repeat(3, 1fr);
 }
+.banners-list__link {
+  position: relative;
+}
+.banners-list__content {
+  top: 15px;
+  left: 25px;
+  color: #ffffff;
+  width: 320px;
+  position: absolute;
+}
+.banners-list__content .container {
+  gap: 10px;
+  display: flex;
+}
+.banners-list__content .place {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.banners-list__content .place .number {
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 100%;
+}
+.banners-list__content .place .text {
+  font-size: 20px;
+}
+.banners-list__content .description {
+  font-size: 20px;
+}
 .banners-list__img {
   width: 100%;
 }
