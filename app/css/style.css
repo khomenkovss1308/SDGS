@@ -277,6 +277,11 @@ body {
   padding-top: 59%;
 }
 
+.search.wrapper {
+  margin: 20px auto 0;
+  width: 30%;
+}
+
 @media (max-width: 1600px) {
   .wrapper {
     width: 90%;
@@ -287,6 +292,10 @@ body {
   .wrapper__right-block {
     width: 66%;
   }
+  .search.wrapper {
+    margin: 20px auto 0;
+    width: 30%;
+  }
 }
 @media (max-width: 1024px) {
   .wrapper__left-block {
@@ -294,6 +303,16 @@ body {
   }
   .wrapper__right-block {
     width: 100%;
+  }
+  .search.wrapper {
+    margin: 20px auto 0;
+    width: 50%;
+  }
+}
+@media (max-width: 600px) {
+  .search.wrapper {
+    margin: 20px auto 0;
+    width: 90%;
   }
 }
 .media__list {
@@ -2123,7 +2142,7 @@ textarea {
   position: absolute;
   top: -0.5px;
   right: -2px;
-  background: #9b9b9b;
+  background: #2C5B95;
   width: 62px;
   height: 41px;
   border-radius: 0 4px 4px 0;
@@ -2131,7 +2150,7 @@ textarea {
 }
 @media (any-hover: hover) {
   .search-button:hover {
-    background: #2C5B95;
+    background: #9b9b9b;
   }
 }
 .search-button span svg {

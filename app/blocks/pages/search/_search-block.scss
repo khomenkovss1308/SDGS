@@ -25,14 +25,14 @@
    position: absolute;
    top: -.5px;
    right: -2px;
-   background: #9b9b9b;
+   background: #2C5B95;
    width: 62px;
    height: 41px;
    border-radius: 0 4px 4px 0;
    transition: all ease .3s;
    @media (any-hover: hover){
       &:hover{
-         background: #2C5B95;
+         background: #9b9b9b;
       }
    }
    & span {

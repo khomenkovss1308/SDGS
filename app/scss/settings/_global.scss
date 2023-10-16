@@ -92,6 +92,11 @@ body {
     }
 }
 
+.search.wrapper {
+    margin: 20px auto 0;
+    width: 30%;
+}
+
 @media (max-width: 1600px) {
     .wrapper {
         width: 90%;
@@ -104,6 +109,11 @@ body {
             width: 66%;
         }
     }
+
+    .search.wrapper {
+        margin: 20px auto 0;
+        width: 30%;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -115,5 +125,17 @@ body {
         &__right-block {
             width: 100%;
         }
+    }
+
+    .search.wrapper {
+        margin: 20px auto 0;
+        width: 50%;
+    }
+}
+
+@media (max-width: 600px) {
+    .search.wrapper {
+        margin: 20px auto 0;
+        width: 90%;
     }
 }
