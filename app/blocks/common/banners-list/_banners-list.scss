@@ -12,8 +12,8 @@
     &__content {
         top: 15px;
         left: 25px;
+        right: 40px;
         color: $white;
-        width: 320px;
         position: absolute;
         
 
@@ -25,8 +25,6 @@
         & .place {
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
 
             & .number {
                 font-size: 50px;
@@ -49,13 +47,133 @@
     }
 }
 
+@media (max-width: 1200px) {
+    .banners-list {
+        &__content {
+            top: 15px;
+            left: 25px;
+            right: 10px;
+            
+            & .title {
+                font-size: 25px;
+            }
+
+            & .place {
+                display: flex;
+                flex-direction: column;
+    
+                & .number {
+                    font-size: 40px;
+                    font-weight: bold;
+                    line-height: 100%;
+                }
+    
+                & .text {
+                    font-size: 14px;
+                }
+            }
+    
+            & .description {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .banners-list {
+        &__content {
+            top: 15px;
+            left: 25px;
+            right: 10px;
+            
+            & .title {
+                font-size: 25px;
+            }
+
+            & .place {
+                display: flex;
+                flex-direction: column;
+    
+                & .number {
+                    font-size: 40px;
+                    font-weight: bold;
+                    line-height: 100%;
+                }
+    
+                & .text {
+                    font-size: 14px;
+                }
+            }
+    
+            & .description {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
 @media (max-width: 768px) {
     .banners-list {
         grid-template-columns: repeat(1, 1fr);
         margin-bottom: 50px;
 
         &__content {
-            width: 100%;
+            top: 15px;
+            left: 25px;
+            right: 10px;
+            color: $white;
+            position: absolute;
+            
+    
+            & .container {
+                gap: 10px;
+                display: flex;
+            }
+    
+            & .place {
+                display: flex;
+                flex-direction: column;
+    
+                & .number {
+                    font-size: 50px;
+                    font-weight: bold;
+                    line-height: 100%;
+                }
+    
+                & .text {
+                    font-size: 20px;
+                }
+            }
+    
+            & .description {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .banners-list {
+        &__content {
+            .place {
+                display: flex;
+                flex-direction: column;
+
+                & .number {
+                    font-size: 40px;
+                    font-weight: bold;
+                    line-height: 100%;
+                }
+
+                & .text {
+                    font-size: 14px;
+                }
+            }
+
+            & .description {
+                font-size: 16px;
+            }
         }
     }
 }

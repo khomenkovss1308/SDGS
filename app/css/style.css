@@ -1062,8 +1062,8 @@ body {
 .banners-list__content {
   top: 15px;
   left: 25px;
+  right: 40px;
   color: #ffffff;
-  width: 320px;
   position: absolute;
 }
 .banners-list__content .container {
@@ -1073,8 +1073,6 @@ body {
 .banners-list__content .place {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 .banners-list__content .place .number {
   font-size: 50px;
@@ -1091,13 +1089,103 @@ body {
   width: 100%;
 }
 
+@media (max-width: 1200px) {
+  .banners-list__content {
+    top: 15px;
+    left: 25px;
+    right: 10px;
+  }
+  .banners-list__content .title {
+    font-size: 25px;
+  }
+  .banners-list__content .place {
+    display: flex;
+    flex-direction: column;
+  }
+  .banners-list__content .place .number {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 100%;
+  }
+  .banners-list__content .place .text {
+    font-size: 14px;
+  }
+  .banners-list__content .description {
+    font-size: 20px;
+  }
+}
+@media (max-width: 1000px) {
+  .banners-list__content {
+    top: 15px;
+    left: 25px;
+    right: 10px;
+  }
+  .banners-list__content .title {
+    font-size: 25px;
+  }
+  .banners-list__content .place {
+    display: flex;
+    flex-direction: column;
+  }
+  .banners-list__content .place .number {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 100%;
+  }
+  .banners-list__content .place .text {
+    font-size: 14px;
+  }
+  .banners-list__content .description {
+    font-size: 14px;
+  }
+}
 @media (max-width: 768px) {
   .banners-list {
     grid-template-columns: repeat(1, 1fr);
     margin-bottom: 50px;
   }
   .banners-list__content {
-    width: 100%;
+    top: 15px;
+    left: 25px;
+    right: 10px;
+    color: #ffffff;
+    position: absolute;
+  }
+  .banners-list__content .container {
+    gap: 10px;
+    display: flex;
+  }
+  .banners-list__content .place {
+    display: flex;
+    flex-direction: column;
+  }
+  .banners-list__content .place .number {
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 100%;
+  }
+  .banners-list__content .place .text {
+    font-size: 20px;
+  }
+  .banners-list__content .description {
+    font-size: 20px;
+  }
+}
+@media (max-width: 400px) {
+  .banners-list__content .place {
+    display: flex;
+    flex-direction: column;
+  }
+  .banners-list__content .place .number {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 100%;
+  }
+  .banners-list__content .place .text {
+    font-size: 14px;
+  }
+  .banners-list__content .description {
+    font-size: 16px;
   }
 }
 .lang-list {
