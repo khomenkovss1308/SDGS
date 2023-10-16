@@ -53,5 +53,9 @@
     .banners-list {
         grid-template-columns: repeat(1, 1fr);
         margin-bottom: 50px;
+
+        &__content {
+            width: 100%;
+        }
     }
 }

@@ -63,6 +63,9 @@
 
             .target-block__content {
                 background-image: linear-gradient(-180deg, #22B4DE 2%, #209FC3 99%);
+                left: auto;
+                right: 0;
+                transform-origin: top right;
             }
         }
 
@@ -162,6 +165,9 @@
 
             .target-block__content {
                 background-image: linear-gradient(-180deg, #334B80 4%, #202F52 95%);
+                left: auto;
+                right: 0;
+                transform-origin: top right;
             }
         }
     }
