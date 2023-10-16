@@ -54,7 +54,8 @@
    &__mail {
       padding-top: 10px;
       & a {
-         color: $black;
+        color: #2C5B95;
+        font-weight: 500;
          font-size: 14px;
       }
    }
@@ -91,6 +92,7 @@ textarea {
    border: 1px solid #AFB7C0;
    border-radius: 4px;
    font-size: 18px;
+   resize: vertical;
 }
 .contact-form-surname {
    width: 100%;
@@ -108,7 +110,9 @@ textarea {
    display: flex;
    flex-direction: column;
    padding-bottom: 40px;
-
+ @media(max-width: 1024px) {
+   padding-bottom: 0;
+ }
 }
 
 .button {

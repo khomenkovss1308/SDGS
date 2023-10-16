@@ -1277,7 +1277,7 @@ body {
   align-items: center;
   color: #000000;
   font-size: 14px;
-  padding: 0 10px;
+  padding: 10px;
   background: #EBEDEF;
   border-radius: 4px;
 }
@@ -1786,11 +1786,19 @@ table.architecture-table td span {
   padding-bottom: 10px;
 }
 .ambasadors-card__block-link {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
   text-align: center;
   font-size: clamp(18px, 2.083vw, 20px);
   line-height: 120%;
   font-weight: 400;
   padding-bottom: 10px;
+  color: #2C5B95;
+}
+.ambasadors-card__block-link a {
+  color: #2C5B95;
+  font-weight: 500;
 }
 .ambasadors-card__university {
   text-align: center;
@@ -1804,6 +1812,11 @@ table.architecture-table td span {
 }
 .ambasadors-card__image {
   height: 900px;
+}
+@media (max-width: 768px) {
+  .ambasadors-card__image {
+    height: 450px;
+  }
 }
 @media (max-width: 475px) {
   .ambasadors-card__image {
@@ -1839,6 +1852,7 @@ table.architecture-table td span {
 
 table.goals {
   width: 100%;
+  margin-bottom: clamp(20px, 5.2vw, 50px);
   border-collapse: collapse;
   border-spacing: 0;
   height: auto;
@@ -2004,7 +2018,8 @@ table.goals th {
   padding-top: 10px;
 }
 .contact-item__mail a {
-  color: #000000;
+  color: #2C5B95;
+  font-weight: 500;
   font-size: 14px;
 }
 
@@ -2047,6 +2062,7 @@ textarea {
   border: 1px solid #AFB7C0;
   border-radius: 4px;
   font-size: 18px;
+  resize: vertical;
 }
 
 .contact-form-surname {
@@ -2065,6 +2081,11 @@ textarea {
   display: flex;
   flex-direction: column;
   padding-bottom: 40px;
+}
+@media (max-width: 1024px) {
+  .contact-form-text {
+    padding-bottom: 0;
+  }
 }
 
 .button {
