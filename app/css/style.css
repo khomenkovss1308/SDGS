@@ -336,6 +336,114 @@ body {
   font-weight: 500;
 }
 
+.photo-inner__list {
+  display: grid;
+  grid-gap: 10px;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(3, 1fr);
+}
+.photo-inner__img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.full-screen-slider {
+  padding: 100px;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  opacity: 0;
+  transition: all 0.3s;
+}
+.full-screen-slider .swiper {
+  width: 100%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.full-screen-slider .swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+.full-screen-slider .mySwiper2 {
+  height: 80%;
+  width: 100%;
+}
+.full-screen-slider .mySwiper {
+  height: 20%;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+.full-screen-slider .mySwiper .swiper-slide {
+  width: 25%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0);
+}
+.full-screen-slider .mySwiper .swiper-slide-thumb-active {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.full-screen-slider .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.close-slider {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  .photo-inner__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .full-screen-slider {
+    padding: 200px 40px;
+  }
+  .full-screen-slider .swiper-slide {
+    background-size: cover;
+    background-position: center;
+  }
+  .full-screen-slider .mySwiper2 {
+    height: 60%;
+    width: 100%;
+  }
+  .full-screen-slider .mySwiper {
+    height: 20%;
+    box-sizing: border-box;
+    padding: 10px 0;
+  }
+  .full-screen-slider .mySwiper .swiper-slide {
+    width: 25%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+  }
+  .full-screen-slider .mySwiper .swiper-slide-thumb-active {
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+  .full-screen-slider .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+@media (max-width: 500px) {
+  .photo-inner__list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 .sub-nav__list__item {
   padding: 10px;
   cursor: pointer;
