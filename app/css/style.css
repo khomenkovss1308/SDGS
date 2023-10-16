@@ -1218,6 +1218,12 @@ body {
   color: #193557;
   font-weight: 600;
 }
+.map-navigation .accordion__header {
+  align-items: flex-start;
+}
+.map-navigation .accordion__header::after {
+  margin-top: 6px;
+}
 
 @media (max-width: 1024px) {
   .map-navigation .accordion__header {
@@ -1760,6 +1766,10 @@ table.architecture-table td span {
 
 .ambasadors-card {
   padding-bottom: 30px;
+}
+.ambasadors-card__tel {
+  text-decoration: underline;
+  font-weight: bold;
 }
 .ambasadors-card__title {
   text-align: center;

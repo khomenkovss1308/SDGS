@@ -32,6 +32,13 @@
             }
         }
     }
+
+    & .accordion__header {
+        align-items: flex-start;
+        &::after {
+            margin-top: 6px;
+        }
+    }
 }
 
 @media (max-width: 1024px) {

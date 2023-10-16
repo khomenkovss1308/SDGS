@@ -24,8 +24,13 @@
    }
 }
 .ambasadors-card {
-padding-bottom: 30px;
+   padding-bottom: 30px;
    // .ambasadors-card__title
+
+   &__tel {
+      text-decoration: underline;
+      font-weight: bold;
+   }
 
    &__title {
       text-align: center;
