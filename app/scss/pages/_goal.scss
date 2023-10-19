@@ -1,0 +1,115 @@
+.goal {
+    &__list {
+        gap: 11px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        &__item {
+            width: 49%;
+        }
+    }
+
+    &__card {
+        padding: 20px;
+        height: 250px;
+        display: flex;
+        border-radius: 5px;
+        flex-direction: column;
+        background-repeat: no-repeat;
+        justify-content: space-between;
+        &__header {
+            display: flex;
+            justify-content: space-between;
+
+            & .title {
+                width: 80%;
+                color: $white;
+                font-size: 26px;
+                font-weight: bold;
+            }
+
+            & .number {
+                color: $white;
+                font-size: 50px;
+                font-weight: bold;
+            }
+        }
+
+        &__icon {
+            max-width: 200px;
+            height: 120px;
+        }
+    }
+}
+
+.goal__list .goal__list__item:nth-child(1) .goal__card {
+    background-image: url(../images/goal/goal_bg.png), linear-gradient(-180deg, #F52853 0%, #DC254B 98%);
+}
+
+.goal__list .goal__list__item:nth-child(2) .goal__card {
+    background-image: url(../images/goal/goal_bg.png), linear-gradient(-180deg, #F5AD00 0%, #E2A104 100%);
+}
+
+.goal__list .goal__list__item:nth-child(3) .goal__card {
+    background-image: url(../images/goal/goal_bg.png), linear-gradient(-180deg, #06AB2D 1%, #0B9F2E 99%);
+}
+
+.goal__list .goal__list__item:nth-child(4) .goal__card {
+    background-image: url(../images/goal/goal_bg.png), linear-gradient(-180deg, #CB1E32 0%, #AF2535 96%);
+}
+
+.goal__list .goal__list__item:nth-child(5) .goal__card {
+    background-image: url(../images/goal/goal_bg.png), linear-gradient(-180deg, #F03B2B 1%, #DA3F31 100%);
+}
+
+.goal__list .goal__list__item:nth-child(6) .goal__card {
+    background-image: url(../images/goal/goal_bg.png), linear-gradient(-180deg, #22B4DE 2%, #209FC3 99%);
+}
+
+.goal__list .goal__list__item:nth-child(7) .goal__card {
+    background-image: url(../images/goal/goal_bg.png), linear-gradient(-180deg, #FFBD43 0%, #F2B037 94%);
+}
+
+.goal__list .goal__list__item:nth-child(8) .goal__card {
+    background-image: url(../images/goal/goal_bg.png), linear-gradient(-180deg, #961D39 4%, #7A1C32 98%);
+}
+
+@media (max-width: 1024px) {
+    .goal {
+        &__card {
+            &__header {
+                display: flex;
+                justify-content: space-between;
+    
+                & .title {
+                    width: 40%;
+                    color: $white;
+                    font-size: 20px;
+                    font-weight: bold;
+                    margin-right: 20px;
+                }
+    
+                & .number {
+                    color: $white;
+                    font-size: 40px;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .goal {
+        &__list {
+            gap: 11px 0;
+            display: flex;
+            justify-content: space-between;
+    
+            &__item {
+                width: 100%;
+            }
+        }
+    }
+}
