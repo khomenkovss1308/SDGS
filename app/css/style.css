@@ -1028,6 +1028,15 @@ body {
 .logo-slider .swiper-button-next {
   transform: rotate(180deg);
 }
+.logo-slider a {
+  gap: 4px;
+  display: flex;
+  align-items: center;
+}
+.logo-slider .text {
+  font-size: 12px;
+  color: #666666;
+}
 
 @media (max-width: 1600px) {
   .logo-slider {
