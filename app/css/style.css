@@ -262,6 +262,22 @@ body {
   margin-bottom: 10px;
 }
 
+.paragraph {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 12px;
+}
+
+.link {
+  width: 100%;
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  color: #2C5B95;
+  margin-bottom: 12px;
+  text-decoration: underline;
+}
+
 .video {
   width: 100%;
   height: 100%;
@@ -313,6 +329,9 @@ body {
   .search.wrapper {
     margin: 20px auto 0;
     width: 90%;
+  }
+  .title {
+    font-size: 22px;
   }
 }
 .media__list {
@@ -1422,6 +1441,21 @@ body {
   max-width: 200px;
   height: 120px;
 }
+.goal__block {
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.goal__block .number {
+  color: #ffffff;
+  font-size: 70px;
+  font-weight: bold;
+}
+.goal__block .icon {
+  width: 300px;
+  height: 150px;
+}
 
 .goal__list .goal__list__item:nth-child(1) .goal__card {
   background-image: url(../images/goal/goal_bg.png), linear-gradient(-180deg, #F52853 0%, #DC254B 98%);
@@ -1455,6 +1489,12 @@ body {
   background-image: url(../images/goal/goal_bg.png), linear-gradient(-180deg, #961D39 4%, #7A1C32 98%);
 }
 
+.goal-icon {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
 @media (max-width: 1024px) {
   .goal__card__header {
     display: flex;
@@ -1472,6 +1512,22 @@ body {
     font-size: 40px;
     font-weight: bold;
   }
+  .goal__block {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .goal__block .number {
+    color: #ffffff;
+    font-size: 70px;
+    font-weight: bold;
+  }
+  .goal__block .icon {
+    width: 300px;
+    height: 150px;
+  }
 }
 @media (max-width: 700px) {
   .goal__list {
@@ -1481,6 +1537,15 @@ body {
   }
   .goal__list__item {
     width: 100%;
+  }
+  .goal__block .number {
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: bold;
+  }
+  .goal__block .icon {
+    width: 150px;
+    height: 100px;
   }
 }
 .news__list {
@@ -1958,6 +2023,16 @@ body {
   }
 }
 
+@media (max-width: 1024px) {
+  .main-bg-title-block {
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+}
 table.architecture-table {
   width: 100%;
   border-collapse: collapse;

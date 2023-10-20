@@ -32,6 +32,18 @@
          }
 		}
 }
+
+@media (max-width: 1024px) {
+   .main-bg-title-block {
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 30px;
+      display: flex;
+      align-items: center;
+      height: 100%;
+   
+   }
+}
 table.architecture-table{
 	width: 100%;
 	border-collapse:collapse;
