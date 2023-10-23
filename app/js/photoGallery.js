@@ -1,12 +1,10 @@
 $(document).ready(function () {
-    var fullScreenSwiper;
+    let fullScreenSwiper;
 
     function openFullScreenSlider() {
-        // Показываем слайдер с задержкой для плавного появления
         $('.full-screen-slider').show().css('opacity', 1);
 
-        // Пересоздаем слайдеры
-        var mainSwiper = new Swiper('.mySwiper2', {
+        let mainSwiper = new Swiper('.mySwiper2', {
             spaceBetween: 10,
             navigation: {
                 nextEl: '.swiper-button-next',
@@ -17,7 +15,7 @@ $(document).ready(function () {
             },
         });
 
-        var thumbsSwiper = new Swiper('.mySwiper', {
+        let thumbsSwiper = new Swiper('.mySwiper', {
             spaceBetween: 10,
             slidesPerView: 4,
             freeMode: true,
@@ -25,15 +23,13 @@ $(document).ready(function () {
             watchSlidesProgress: true,
         });
 
-        // Синхронизируем основной и миниатюрный слайдеры
         mainSwiper.controller.control = thumbsSwiper;
         thumbsSwiper.controller.control = mainSwiper;
 
-        // Добавим функциональность для смены активной картинки при клике на элемент списка
         $('.photo-inner__list__item').click(function () {
-            var index = $(this).index(); // Получаем индекс нажатого элемента
-            mainSwiper.slideTo(index); // Переключаем основной слайдер
-            mainSwiper.update(); // Обновляем слайдер
+            let index = $(this).index();
+            mainSwiper.slideTo(index);
+            mainSwiper.update();
         });
     }
 
@@ -42,13 +38,11 @@ $(document).ready(function () {
     });
 
     $('.close-slider').click(function () {
-        // Скрываем слайдер с задержкой для плавного исчезновения
         $('.full-screen-slider').css('opacity', 0);
         setTimeout(function () {
             $('.full-screen-slider').hide();
         }, 300);
 
-        // Очищаем и уничтожаем слайдеры
         mainSwiper.removeAllSlides();
         thumbsSwiper.removeAllSlides();
 

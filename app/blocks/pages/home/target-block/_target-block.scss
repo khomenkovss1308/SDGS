@@ -3,6 +3,7 @@
     margin: 50px auto;
 
     &__content {
+        z-index: 3;
         gap: 13px;
         opacity: 0;
         display: flex;
