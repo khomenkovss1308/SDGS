@@ -81,6 +81,20 @@ body {
     font-size: 20px;
     font-weight: 400;
     margin-bottom: 12px;
+
+    & .bold {
+        font-weight: bold;
+    }
+}
+
+.list {
+    list-style: disc!important;
+    padding-left: 40px!important;
+    &__item {
+        color: $black;
+        font-size: 22px;
+        margin-bottom: 12px;
+    }
 }
 
 .link {

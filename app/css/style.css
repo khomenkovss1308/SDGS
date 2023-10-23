@@ -267,6 +267,19 @@ body {
   font-weight: 400;
   margin-bottom: 12px;
 }
+.paragraph .bold {
+  font-weight: bold;
+}
+
+.list {
+  list-style: disc !important;
+  padding-left: 40px !important;
+}
+.list__item {
+  color: #000000;
+  font-size: 22px;
+  margin-bottom: 12px;
+}
 
 .link {
   width: 100%;
@@ -1783,6 +1796,166 @@ body {
   }
   .not-found__sub-title {
     width: 320px;
+  }
+}
+.clear-lang {
+  gap: 24px;
+  display: flex;
+  max-width: 50%;
+  margin: 0 auto 50px;
+}
+.clear-lang__list {
+  gap: 24px;
+  display: flex;
+  flex-direction: column;
+}
+.clear-lang__list__item {
+  position: relative;
+}
+.clear-lang__list__item:nth-child(2) .clear-lang__content {
+  background-color: #F5AD00;
+}
+.clear-lang__list__item:nth-child(3) .clear-lang__content {
+  background-color: #06AB2D;
+}
+.clear-lang__list__item:nth-child(4) .clear-lang__content {
+  background-color: #CB1E32;
+}
+.clear-lang__list__item:nth-child(5) .clear-lang__content {
+  background-color: #F03B2B;
+}
+.clear-lang__list__item:nth-child(6) .clear-lang__content {
+  background-color: #22B4DE;
+}
+.clear-lang__list__item:nth-child(7) .clear-lang__content {
+  background-color: #FFBD43;
+}
+.clear-lang__list__item:nth-child(8) .clear-lang__content {
+  background-color: #961D39;
+}
+.clear-lang__list__item:nth-child(9) .clear-lang__content {
+  background-color: #F7783D;
+}
+.clear-lang__list__item:nth-child(10) .clear-lang__content {
+  background-color: #E0207E;
+}
+.clear-lang__list__item:nth-child(11) .clear-lang__content {
+  background-color: #F7A246;
+}
+.clear-lang__list__item:nth-child(12) .clear-lang__content {
+  background-color: #DA983E;
+}
+.clear-lang__list__item:nth-child(13) .clear-lang__content {
+  background-color: #538645;
+}
+.clear-lang__list__item:nth-child(14) .clear-lang__content {
+  background-color: #2488C7;
+}
+.clear-lang__list__item:nth-child(15) .clear-lang__content {
+  background-color: #3FC24D;
+}
+.clear-lang__list__item:nth-child(16) .clear-lang__content {
+  background-color: #216EAE;
+}
+.clear-lang__list__item:nth-child(17) .clear-lang__content {
+  background-color: #334B80;
+}
+.clear-lang__link {
+  width: 210px;
+  height: 210px;
+  display: flex;
+  flex-direction: column;
+  display: inline-block;
+  position: relative;
+  overflow: visible;
+}
+.clear-lang__img {
+  width: 100%;
+  height: 100%;
+}
+.clear-lang__content {
+  width: 220px; /* Allow the content to expand beyond the link's width */
+  display: none;
+  color: #ffffff;
+  font-size: 26px;
+  position: absolute;
+  background-color: #F52853;
+  padding: 10px 15px 10px 10px;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.clear-lang__info-block .title {
+  font-size: 18px;
+  color: #193557;
+  text-transform: uppercase;
+}
+.clear-lang__info-block .paragraph {
+  font-size: 22px;
+}
+.clear-lang__info-block .btn {
+  height: 32px;
+  padding: 0 15px;
+  border-radius: 4px;
+  background-color: #EBEDEF;
+}
+.clear-lang__btn-block {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+.clear-lang__btn-block .back-link, .clear-lang__btn-block .up-link {
+  height: 32px;
+  color: #000000;
+  padding: 0 15px;
+  font-size: 22px;
+  font-weight: 400;
+  border-radius: 4px;
+  background-color: #EBEDEF;
+  display: inline-block;
+}
+.clear-lang__btn-block .up-link {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.clear-lang__btn-block .up-link img {
+  width: 20px;
+  height: 20px;
+}
+
+.clear-lang__link:hover .clear-lang__content {
+  display: block;
+  opacity: 1;
+}
+
+@media (max-width: 1024px) {
+  .clear-lang {
+    max-width: 100%;
+    flex-direction: column;
+  }
+  .clear-lang__list {
+    gap: 24px 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .clear-lang__list__item {
+    width: 16.5%;
+  }
+  .clear-lang__link {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .clear-lang__left-block {
+    display: none;
   }
 }
 .target-block {

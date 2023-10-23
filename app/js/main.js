@@ -81,4 +81,27 @@ $(document).ready(function() {
     });
 });
 
+$(document).ready(function() {
+    $(".clear-lang__content").hide();
 
+    $(".clear-lang__list__item").hover(
+        function() {
+            const content = $(this).find(".clear-lang__content");
+            content.css("display", "block");
+            content.css("opacity", "1");
+        }, 
+        function() {
+            const content = $(this).find(".clear-lang__content");
+            content.css("display", "none");
+            content.css("opacity", "0");
+        }
+    );
+});
+
+
+$(document).ready(function() {
+    $('.up-link').click(function(e) {
+        e.preventDefault();
+        $('html, body').animate({scrollTop: 0}, 'slow');
+    });
+});
